@@ -26,6 +26,16 @@ public class Appium_Xpath {
 		
 		//xpath Using Index
 		driver.findElement(By.xpath("//android.widget.TextView[@index='4']")).click();
+		Thread.sleep(2000);
+		
+		//xpath Using Content-desc
+		driver.findElement(By.xpath("//android.widget.TextView[@content-desc='Storage']")).click();
+		Thread.sleep(2000);
+		
+		//xpath Using resource-id
+		driver.findElement(By.xpath("//android.widget.TextView[@resource-id='android:id/text1']")).click();
+		
+		
 		
 		
 	}
